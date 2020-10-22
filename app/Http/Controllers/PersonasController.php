@@ -61,6 +61,7 @@ class PersonasController extends Controller
     {    
         $persona=Personas::find ($id);  
         $persona->Nombre=$request->Nombre;
+        
         if($persona->save())
         return response()->json(["Usuario actualizado"=>$persona]);   
         return response()->json(null,400); 
