@@ -43,8 +43,8 @@ class ComentariossController extends Controller
      */
     public function comentarioProducto(Request $Nombre)
     {
-        $products=DB::table('productos')
-        ->join('comentarios','comentarios.productos','=','productos.id')
+        $products=DB::table('comentarios')
+        ->join('productos','comentarios.productos','=','productos.id')
         ->where('productos.nombre','=',$Nombre->Producto)
         ->select('comentarios.id','comentarios.Contenido')
         ->get();

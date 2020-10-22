@@ -59,7 +59,6 @@ class ProductosController extends Controller
     public function Delete(Request $request)
     {
         $products=DB::table('productos')
-        ->join('comentarios','comentarios.productos','=','productos.id')
         ->where('productos.id','=',$request->id)
         ->delete();
         return 'Eliminacion Exitosa!!';

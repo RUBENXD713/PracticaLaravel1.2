@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 /*Route::get('/', function () {
     return view('welcome');*/
-/*Route::get('Relacion','ProductosController@Relacion');
+Route::get('Relacion','ProductosController@Relacion');
 Route::get('Productos','ProductosController@getProductos');
 Route::get('NewProduct','ProductosController@createProductos');
 Route::get('Comentarioss','ComentariossController@getComentario');
@@ -30,5 +30,5 @@ Route::get('NewPersona','PersonasController@createPersona');
 Route::get('Relacion','PersonasController@Relacion');
 Route::get('Eliminar','PersonasController@Delete');
 Route::put('actualizarPersona/{id}','PersonasController@UpdatePersona');
-Route::get('RelacionTodo','PersonasController@RelacionTotal');*/
+Route::get('RelacionTodo','PersonasController@RelacionTotal');
 //});
