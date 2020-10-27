@@ -13,6 +13,11 @@ class ProductosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function ejemplo(Request $request){
+        return response()->json("Ya jalo carnal",200);
+    }
+
     public function getProductos()
     {
         $producto=Productos::all();
